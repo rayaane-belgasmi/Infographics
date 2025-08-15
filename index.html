@@ -10,11 +10,11 @@
   /* ===== Palette (Merck-inspired) ===== */
   :root{
     --primary:#0F2AA2;
-    --magenta:#E4007D;
-    --green:#7ED321;
-    --yellow:#FFD100;
-    --cyan:#00A3E0;
-    --purple:#462583;
+    --magenta:#EB3D98;
+    --green:#A5CD50;
+    --yellow:#FFC832;
+    --cyan:#99D8D0;
+    --purple:#503291;
 
     --ink:#232323;
     --ink-2:#3b3b3b;
@@ -22,10 +22,17 @@
     --panel: rgba(255,255,255,0.92);
     --panel-border: rgba(255,255,255,0.45);
   }
+  @font-face {
+  font-family: 'Merck';
+  src: url('./Merck-Regular.ttf') format('Merck');
+       
+  font-weight: normal;
+  font-style: normal;
+}
 
   /* ===== Reset / Base ===== */
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0;font-family: 'Inter', sans-serif;;color:var(--ink);background:#fff}
+  html,body{margin:0;padding:0;font-family: 'Courier New', monospace;color:var(--ink);background:#fff}
   img{max-width:100%;display:block}
   h1,h2,h3{margin:0 0 .5rem 0}
   p{margin:.25rem 0}
@@ -36,7 +43,7 @@
   .bg{
     min-height:100vh;
     background-image: linear-gradient(180deg, rgba(70,37,131,0.88) 0%, rgba(70,37,131,0.66) 28%, rgba(255,255,255,0) 60%),
-                      url('merck-bg.png'); /* <-- replace with your background image */
+                      url('Mercrobe2_03_Pos01_VM.png'); /* <-- replace with your background image */
     background-size:cover;
     background-position:center;
   }
@@ -58,10 +65,11 @@
     padding:6px 10px;border-radius:9999px;background:#ffffff66;color:#0b1641;
   }
   .title{
-    margin-top:12px;font-weight:900;line-height:1.15;
-    font-size:clamp(28px,3.2vw,40px);color:#fff;
+    font-family: 'Merck', light;
+    margin-top:12px;font-weight:250;line-height:1.15;
+    font-size:clamp(28px,3.2vw,40px);color:#A5CD50;
   }
-  .subtitle{margin-top:6px;color:#f2f8ff;opacity:.95}
+  .subtitle{margin-top:6px;color:#99D8D0;opacity:.95}
 
   /* ===== Cards / sections ===== */
   .card{
@@ -446,12 +454,6 @@
 
     <!-- ===== Footer ===== -->
     <section class="card">
-      <div class="g-4">
-        <div class="kv"><div class="t">Purdue</div><div class="s">Vertical floors L0–L4; move one level at a time.</div></div>
-        <div class="kv"><div class="t">62443 series</div><div class="s">Security concepts: zones &amp; conduits; default‑deny, least privilege, accountability.</div></div>
-        <div class="kv"><div class="t">DMZ (L3.5)</div><div class="s">Security lobby for crossings between operations ↔ enterprise.</div></div>
-        <div class="kv"><div class="t">Admin Access</div><div class="s">Via jump‑host with strong authentication &amp; logging.</div></div>
-      </div>
       <div class="foot-note">Digital ARC Connectivity workstream LS CTO Office · Educational content 2025</div>
     </section>
   </div>
