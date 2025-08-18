@@ -179,19 +179,18 @@
 
     <!-- ===== Elevator Summary ===== -->
     <section class="card">
-      <div class="heading cyan">Elevator Summary</div>
-      <div class="g-3">
-        <div class="kv">
-          <div class="t">Purdue = Floors</div>
-          <div class="s">Stack from physical process (L0) to enterprise (L4); move one floor at a time.</div>
-        </div>
-        <div class="kv">
-          <div class="t">IEC/ISA‑62443 series</div>
-          <div class="s">A family of security standards. We reference zones &amp; conduits (approved paths) and default‑deny.</div>
-        </div>
-        <div class="kv">
-          <div class="t">DMZ (L3.5)</div>
-          <div class="s">Security lobby that brokers, checks, and logs crossings between operations ↔ enterprise.</div>
+      <div class="heading cyan">History checkpoint</div>
+      <p>
+        When industrial engineers first mapped computer networks onto plant equipment (way before “cloud” was a buzzword) they needed a simple, repeatable way to separate business computers from the machines that move valves and mix chemicals.
+        The result was the Purdue Model (later folded into ISA-95 and IEC-62443). 
+        Its goal is pure OT common sense: </p>
+      <p>  * Keep the noisy, change-hungry office PCs away from time-critical control systems. </p>
+      <p> * Insert clearly-defined checkpoints so any data passing between “business” and “process” can be inspected, logged, and—if necessary—blocked. </p>
+        <p> * Localise failures. If one layer is compromised, devices in other layers can still operate safely. </p>
+          <p> This document atempts to explain some key concepts related to DPI as a network architechtural concept.</p>
+          <p class="subtitle"><strong>Purdue = floors</strong> (vertical levels). <strong>IEC/ISA‑62443 is a series</strong> of security standards  here we use the ideas of <strong>zones</strong> and <strong>approved paths (conduits)</strong>.</p>
+
+      
         </div>
       </div>
     </section>
